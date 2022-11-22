@@ -1,8 +1,9 @@
 package controllers
 
 import (
-	"gihub.com/olamilekan000/bp-go/services"
 	"github.com/gin-gonic/gin"
+
+	"gihub.com/olamilekan000/bp-go/services"
 )
 
 type UserController struct {
