@@ -16,3 +16,7 @@ func (uc *UserController) Create(c *gin.Context) {
 func (uc *UserController) Get(c *gin.Context) {
 
 }
+
+func NewUserController() *UserController {
+	return &UserController{}
+}
