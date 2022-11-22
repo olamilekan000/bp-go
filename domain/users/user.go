@@ -5,8 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	"gihub.com/olamilekan000/bp-go/constants"
 	emailverifier "github.com/AfterShip/email-verifier"
+
+	"gihub.com/olamilekan000/bp-go/constants"
 )
 
 var (
