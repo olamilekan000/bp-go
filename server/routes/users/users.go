@@ -1,12 +1,13 @@
 package users
 
 import (
+	"context"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
 )
 
-func UserRouteV1(routeGroup *gin.RouterGroup) {
+func UserRouteV1(ctx context.Context, routeGroup *gin.RouterGroup) {
 	userRoutes := routeGroup.Group("/users")
 	{
 		userRoutes.GET("/", func(c *gin.Context) {

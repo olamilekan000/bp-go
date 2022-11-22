@@ -1,7 +1,9 @@
 package repository
 
+import "context"
+
 type IEUserRepository interface {
-	Create()
+	Create(ctx context.Context)
 }
 
 type UserRepository struct {

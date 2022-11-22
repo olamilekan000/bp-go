@@ -1,6 +1,7 @@
 package server
 
 import (
+	"context"
 	"fmt"
 	"log"
 	"os"
@@ -13,9 +14,12 @@ import (
 func Start() {
 	envChecks()
 
+	ctx, cancel := context.WithCancel(context.Background())
+	defer cancel()
+
 	router := gin.New()
 
-	routes.AddRoutes(router)
+	routes.AddRoutes(ctx, router)
 
 	port := os.Getenv("PORT")
 
