@@ -6,7 +6,7 @@ import (
 )
 
 type UserController struct {
-	Service services.IEUserService
+	service services.IEUserService
 }
 
 func (uc *UserController) Create(c *gin.Context) {
